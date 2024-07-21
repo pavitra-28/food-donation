@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.home-btn a{
+    width: 100px;
+    padding: 8px 0;
+    margin-top: 10px;
+    margin-right: 2%;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.form-box{
+    width: 80%;
+    max-width: 450px;
+    position: absolute;
+    margin-top: -65px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background: transparent;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+h1{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+.account a{
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.menu-bar{
+    background-color: rgba(255,255,255,0.1);
+    text-align: center;
+    padding: 10px;
+}
+.menu-bar ul li{
+    list-style: none;
+}
+.sub-menu{
+    display: none;
+}
+.sub-menu ul li a{
+    text-decoration: none;
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #eaeaea;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #3c00a0;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+    color: #3c00a0;
+}
+.input-field{
+    background: rgba(255,255,255,0.1);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgba(255,255,255,0.1);
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field img{
+    width: 40px;
+    cursor: pointer;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+}
+.btn-field button{
+    flex-basis: 100%;
+    background: linear-gradient(#ff0000bf,#040810 );
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 20px;
+}
+::placeholder{
+    color: rgba(248, 246, 255, 0.727);
+}
