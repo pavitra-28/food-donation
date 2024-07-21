@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Signup page</title>
+        <link rel="stylesheet" href="signup.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="home-btn">
+                <a href="website.html">Home</a>
+            </div>
+            <div class="form-box">
+                <h1>Sign Up</h1>
+                <form>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-field">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <input type="password" placeholder="Password" id="password">
+                        </div>
+                        <script>
+                            let eyeicon=document.getElementById("eyeicon");
+                            let password=document.getElementById("password");
+                            eyeicon.onclick=function(){
+                                if(password.type=="password"){
+                                    password.type="text";
+                                    eyeicon.src="eye-open.png"
+                                }
+                                else{
+                                    password.type="password";
+                                    eyeicon.src="eye-close.png"
+                                }
+                            }
+                        </script>
+                        </div>
+                        
+                    <div class="btn-field">
+                        <button type="button" class="signup-btn">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
